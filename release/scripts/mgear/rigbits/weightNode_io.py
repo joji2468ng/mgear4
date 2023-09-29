@@ -111,14 +111,17 @@ ENVELOPE_ATTR = "scale"
 
 WD_SUFFIX = "_WD"
 RBF_TYPE = "weightDriver"
+
 # ==============================================================================
 # General utils
 # ==============================================================================
 
-
 # Check for plugin
 def loadWeightPlugin(dependentFunc):
     """ensure that plugin is always loaded prior to importing from json
+
+    Note: No assumption has been made about plugin location, we loop over 
+        available plugin, and check for the highest version.
 
     Args:
         dependentFunc (func): any function that needs to have plugin loaded
@@ -126,20 +129,38 @@ def loadWeightPlugin(dependentFunc):
     Returns:
         func: pass through of function
     """
+    maya_version = int(mc.about(version=True))
+
+    # maya2024+ cannot have a version lower then
+    maya_2024_lower_limit = plugin_utils.pluginVersion("3.6.2")
+    # maya2023- cannot have a version higher then
+    maya_2023_upper_limit = plugin_utils.pluginVersion("3.6.1")
+
     try:
-        plugin_list = plugin_utils.get_all_available_plugins("weightDriver")
-        plugin_utils.load_plugin_with_path(plugin_list, "weightDriver/plug-ins")
-        wd_version = plugin_utils.get_plugin_version("weightDriver")
-        if wd_version and wd_version > "3.6.2":
-            pm.displayInfo(
-                "RBF Manager is using weightDriver version {} installed with SHAPES plugin".format(
-                    wd_version
-                )
-            )
-        else:
-            # just in case there is not SHAPES installed will try to load the
-            # weightDriver included with mGear
-            pm.loadPlugin("weightDriver", qt=True)
+        plugin_list = plugin_utils.get_available_plugins("weightDriver")
+        
+        # only one weightDriver plugin
+        if len(plugin_list) == 1:
+            return dependentFunc
+        
+        # Loop over weight plugins, enable and test version
+        for plugin_data in plugin_list:
+            plugin_utils.load_plugin(*plugin_data)
+            wd_version = plugin_utils.get_plugin_version("weightDriver")
+            usingShapes = False
+
+            if maya_version >= 2024:
+                if wd_version >= maya_2024_lower_limit:
+                    usingShapes = True
+            else:
+                if wd_version <= maya_2023_upper_limit:
+                    usingShapes = True
+
+            if usingShapes:
+                msg = "RBF Manager is using weightDriver version {} installed \
+with SHAPES plugin"
+                pm.displayInfo(msg.format(wd_version))
+                break
 
     except RuntimeError:
         pm.displayWarning("RBF Manager couldn't found any valid RBF solver.")
