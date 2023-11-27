@@ -30,7 +30,7 @@ class FBXExporter(MayaQWidgetDockableMixin, QtWidgets.QDialog):
         super(FBXExporter, self).__init__(parent)
         self.setWindowFlags(QtCore.Qt.Tool)
         self.setAttribute(QtCore.Qt.WA_DeleteOnClose, True)
-        self.setWindowTitle("Shifter's FBX Export")
+        self.setWindowTitle("Shifter's FBX Export (Beta)")
         min_w = 300
         default_w = 400
         default_h = 1000
@@ -485,6 +485,9 @@ class FBXExporter(MayaQWidgetDockableMixin, QtWidgets.QDialog):
         self.file_set_btn.clicked.connect(self.set_folder_path)
         self.file_name_lineedit.textChanged.connect(self.normalize_name)
 
+        self.file_path_lineedit.textChanged.connect(self.set_fbx_directory)
+        self.file_name_lineedit.textChanged.connect(self.set_fbx_file)
+
         # ue file path connection
         self.ue_file_set_btn.clicked.connect(self.set_ue_folder_path)
 
@@ -641,6 +644,16 @@ class FBXExporter(MayaQWidgetDockableMixin, QtWidgets.QDialog):
             export_node = self._get_or_create_export_node()
             export_node.save_root_data("ue_file_path", path)
 
+    def set_fbx_directory(self):
+        path = self.file_path_lineedit.text()
+        export_node = self._get_or_create_export_node()
+        export_node.save_root_data("file_path", path)
+
+    def set_fbx_file(self):
+        path = self.file_name_lineedit.text()
+        export_node = self._get_or_create_export_node()
+        export_node.save_root_data("file_name", path)
+
     def set_fbx_sdk_path(self):
         current_fbx_sdk_path = pfbx.get_fbx_sdk_path()
         fbx_sdk_path = pm.fileDialog2(
@@ -791,11 +804,19 @@ class FBXExporter(MayaQWidgetDockableMixin, QtWidgets.QDialog):
             partitions.update(master_partition)
             partitions.update(export_node.get_partitions())
             print("\t>>> Partitions:")
-            for partition_name, partition_data in partitions.items():
+            
+            # Loops over partitions, and removes any disabled partitions, from being exported.
+            keys = list(partitions.keys())
+            for partition_name in reversed(keys):
+                partition_data = partitions[partition_name]
                 enabled = partition_data.get("enabled", True)
                 skeletal_meshes = partition_data.get("skeletal_meshes", [])
+
                 if not (enabled and skeletal_meshes):
+                    partitions.pop(partition_name)
+                    print("\t\t[!Partition Disabled!] - {}: {}".format(partition_name, skeletal_meshes))
                     continue
+
                 print("\t\t{}: {}".format(partition_name, skeletal_meshes))
             export_config["partitions"] = partitions
 
