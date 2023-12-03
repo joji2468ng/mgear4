@@ -22,6 +22,9 @@ SPRING_ATTRS = [
     "springRotationalDamping",
     "springRotationalStiffness",
     "springSetupMembers",
+    "springConfig",
+    "springTranslation",
+    "springRotation",
 ]
 
 SPRING_PRESET_EXTENSION = ".spg"
@@ -40,14 +43,14 @@ def create_settings_attr(node, config):
     # Check if attr already exists at node
     if pm.attributeQuery("springTotalIntensity", node=node, exists=True):
         return False
-    lock = True
-    keyable = True
+    channelBox = True
+    keyable = False
     # separator Attr
     attr_name = "springConfig"
     attribute.addEnumAttribute(
         node, attr_name, 0, ["Spring Config"], niceName="__________"
     )
-    node.setAttr(attr_name, lock=lock, keyable=keyable)
+    node.setAttr(attr_name, channelBox=channelBox, keyable=keyable)
 
     # Keyable attr
 
@@ -72,7 +75,7 @@ def create_settings_attr(node, config):
     attribute.addEnumAttribute(
         node, attr_name, 0, ["Spring Translation"], niceName="__________"
     )
-    node.setAttr(attr_name, lock=lock, keyable=keyable)
+    node.setAttr(attr_name, channelBox=channelBox, keyable=keyable)
 
     # Keyable attr
     attribute.addAttribute(
@@ -104,7 +107,7 @@ def create_settings_attr(node, config):
     attribute.addEnumAttribute(
         node, attr_name, 0, ["Spring Rotation"], niceName="__________"
     )
-    node.setAttr(attr_name, lock=lock, keyable=keyable)
+    node.setAttr(attr_name, channelBox=channelBox, keyable=keyable)
 
     # Keyable attr
     attribute.addAttribute(
@@ -180,7 +183,7 @@ def get_settings_attr_val(node):
     attr_vals = {}
 
     # Loop through each attribute and attempt to get its value
-    for attr in SPRING_ATTRS[:-1]:
+    for attr in SPRING_ATTRS[:-4]:
         if pm.attributeQuery(attr, node=node, exists=True):
             attr_vals[attr] = node.attr(attr).get()
         else:
@@ -206,7 +209,7 @@ def set_settings_attr_val(node, attr_vals):
         node = pm.PyNode(node)
 
     # Loop through each attribute and attempt to set its value
-    for attr in SPRING_ATTRS[:-1]:
+    for attr in SPRING_ATTRS[:-4]:
         if pm.attributeQuery(attr, node=node, exists=True):
             node.attr(attr).set(attr_vals[attr])
         else:
@@ -266,6 +269,7 @@ def create_spring(node=None, config=None):
 
     # create root
     root = primitive.addTransform(parent, get_name("sprg_root"), t)
+    root.rotateOrder.set(node.rotateOrder.get())
 
     # translate spring
     trans_sprg = primitive.addTransform(root, get_name("sprg_trans"), t)
@@ -739,12 +743,12 @@ def get_spring_targets():
 
 @one_undo
 def delete_all_springs():
-    delete_spring_setup(get_spring_targets)
+    delete_spring_setup(get_spring_targets())
 
 
 @one_undo
 def select_all_springs_targets():
-    pm.select(get_spring_targets)
+    pm.select(get_spring_targets())
 
 
 def move_animation_curves(source_node, target_node):
@@ -760,7 +764,7 @@ def move_animation_curves(source_node, target_node):
         None
     """
 
-    attributes_to_check = ["translate", "rotate", "scale"]
+    attributes_to_check = ["translate", "rotate"]
 
     for attr in attributes_to_check:
         for axis in ["X", "Y", "Z"]:
@@ -770,11 +774,12 @@ def move_animation_curves(source_node, target_node):
 
             # Check if the attribute exists and is animated
             if pm.attributeQuery(compound_attr, node=source_node, exists=True):
-                anim_curves = pm.listConnections(source_plug, type="animCurve")
+                anim_curves = pm.listConnections(source_plug)
+                anim_curves = pm.listConnections(source_plug, p=True, d=False)
                 for curve in anim_curves:
                     # Disconnect curve from source node and connect to target node
-                    pm.disconnectAttr(curve + ".output", source_plug)
-                    pm.connectAttr(curve + ".output", target_plug)
+                    pm.disconnectAttr(curve, source_plug)
+                    pm.connectAttr(curve, target_plug)
 
         compound_attr = (
             attr  # for compound plugs like 'translate', 'rotate', 'scale'
@@ -784,8 +789,8 @@ def move_animation_curves(source_node, target_node):
 
         # Check if the attribute exists and is animated
         if pm.attributeQuery(compound_attr, node=source_node, exists=True):
-            anim_curves = pm.listConnections(source_plug, type="animCurve")
+            anim_curves = pm.listConnections(source_plug, p=True, d=False)
             for curve in anim_curves:
                 # Disconnect curve from source node and connect to target node
-                pm.disconnectAttr(curve + ".output", source_plug)
-                pm.connectAttr(curve + ".output", target_plug)
+                pm.disconnectAttr(curve, source_plug)
+                pm.connectAttr(curve, target_plug)
