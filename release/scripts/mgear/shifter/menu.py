@@ -173,6 +173,7 @@ def guide_template_samples_submenu(parent_menu_id):
     """
     commands = (
         ("Biped Template, Y-up", str_biped_template),
+        ("Biped Custom Template, Y-up", str_biped_custom_template),
         ("Quadruped Template, Y-up", str_quadruped_template),
         ("Game Biped Template, Y-up", str_game_biped_template),
         ("-----", None),
@@ -280,6 +281,11 @@ shifter.reloadComponents()
 str_biped_template = """
 from mgear.shifter import io
 io.import_sample_template("biped.sgt")
+"""
+
+str_biped_custom_template = """
+from mgear.shifter import io
+io.import_sample_template("biped_custom.sgt")
 """
 
 str_quadruped_template = """
