@@ -37,14 +37,10 @@ class Component(component.Main):
             ctl_name = ast.literal_eval(
                 self.settings["ctlNamesDescription_custom"]
             )[0]
+            self.ik_cns = primitive.addTransform(
+                self.root, self.getName("ik_cns"), t)
 
-            ctlParent = self.root
-            if self.settings["ikrefarray"]:
-                self.ik_cns = primitive.addTransform(
-                    self.root, self.getName("ik_cns"), t)
-                ctlParent = self.ik_cns
-
-            self.ctl = self.addCtl(ctlParent,
+            self.ctl = self.addCtl(self.ik_cns,
                                    ctl_name,
                                    t,
                                    self.color_ik,
