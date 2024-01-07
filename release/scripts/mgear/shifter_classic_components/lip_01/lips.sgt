@@ -1,0 +1,4321 @@
+{
+    "components_dict": {
+        "lwrMajor_C0": {
+            "apos": [
+                [
+                    0.0,
+                    -0.4,
+                    1.0
+                ],
+                [
+                    0.0,
+                    -0.4,
+                    2.3571950223745217
+                ]
+            ],
+            "atra": [
+                [
+                    [
+                        1.3571950223745222,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.3571950223745222,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.3571950223745222,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        -0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        1.3571950223745222,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.3571950223745222,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.3571950223745222,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        -0.4,
+                        2.3571950223745217,
+                        1.0
+                    ]
+                ]
+            ],
+            "blade": {},
+            "child_components": [],
+            "param_values": {
+                "Override_Color": false,
+                "RGB_fk": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "RGB_ik": [
+                    0.0,
+                    0.25,
+                    1.0
+                ],
+                "Use_RGB_Color": false,
+                "addLeafJoint": false,
+                "add_full_name_param": false,
+                "color_fk": 6,
+                "color_ik": 18,
+                "comp_index": 0,
+                "comp_name": "lwrMajor",
+                "comp_side": "C",
+                "comp_type": "control_01",
+                "connector": "standard",
+                "ctlGrp": "lip",
+                "ctlNamesDescription": "['ctl']",
+                "ctlNamesDescription_custom": "['ctl']",
+                "ctlSize": 1.0,
+                "default_rotorder": 0,
+                "icon": "cube",
+                "ikrefarray": "",
+                "joint": true,
+                "joint_names": "",
+                "joint_rot_offset_x": 0.0,
+                "joint_rot_offset_y": 0.0,
+                "joint_rot_offset_z": 0.0,
+                "k_ro": true,
+                "k_rx": true,
+                "k_ry": true,
+                "k_rz": true,
+                "k_sx": true,
+                "k_sy": true,
+                "k_sz": true,
+                "k_tx": true,
+                "k_ty": true,
+                "k_tz": true,
+                "leafJoint": false,
+                "mirrorBehaviour": true,
+                "neutralRotation": false,
+                "parentJointIndex": -1,
+                "ui_host": "",
+                "uniScale": false,
+                "useIndex": false
+            },
+            "parent_fullName": "",
+            "parent_localName": "",
+            "pos": {
+                "root": [
+                    0.0,
+                    -0.4,
+                    1.0
+                ],
+                "sizeRef": [
+                    0.0,
+                    -0.4,
+                    2.3571950223745217
+                ]
+            },
+            "tra": {
+                "root": [
+                    [
+                        1.3571950223745222,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.3571950223745222,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.3571950223745222,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        -0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                "sizeRef": [
+                    [
+                        1.3571950223745222,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.3571950223745222,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.3571950223745222,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        -0.4,
+                        2.3571950223745217,
+                        1.0
+                    ]
+                ]
+            }
+        },
+        "lwrMinor_C0": {
+            "apos": [
+                [
+                    0.0,
+                    -0.4,
+                    1.0
+                ],
+                [
+                    0.0,
+                    -0.4,
+                    2.0
+                ]
+            ],
+            "atra": [
+                [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        -0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        -0.4,
+                        2.0,
+                        1.0
+                    ]
+                ]
+            ],
+            "blade": {},
+            "child_components": [],
+            "param_values": {
+                "Override_Color": false,
+                "RGB_fk": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "RGB_ik": [
+                    0.0,
+                    0.25,
+                    1.0
+                ],
+                "Use_RGB_Color": false,
+                "addLeafJoint": false,
+                "add_full_name_param": false,
+                "color_fk": 6,
+                "color_ik": 18,
+                "comp_index": 0,
+                "comp_name": "lwrMinor",
+                "comp_side": "C",
+                "comp_type": "control_01",
+                "connector": "standard",
+                "ctlGrp": "lip",
+                "ctlNamesDescription": "['ctl']",
+                "ctlNamesDescription_custom": "['ctl']",
+                "ctlSize": 0.5,
+                "default_rotorder": 0,
+                "icon": "cube",
+                "ikrefarray": "",
+                "joint": true,
+                "joint_names": "",
+                "joint_rot_offset_x": 0.0,
+                "joint_rot_offset_y": 0.0,
+                "joint_rot_offset_z": 0.0,
+                "k_ro": true,
+                "k_rx": true,
+                "k_ry": true,
+                "k_rz": true,
+                "k_sx": true,
+                "k_sy": true,
+                "k_sz": true,
+                "k_tx": true,
+                "k_ty": true,
+                "k_tz": true,
+                "leafJoint": false,
+                "mirrorBehaviour": true,
+                "neutralRotation": false,
+                "parentJointIndex": -1,
+                "ui_host": "",
+                "uniScale": false,
+                "useIndex": false
+            },
+            "parent_fullName": "",
+            "parent_localName": "",
+            "pos": {
+                "root": [
+                    0.0,
+                    -0.4,
+                    1.0
+                ],
+                "sizeRef": [
+                    0.0,
+                    -0.4,
+                    2.0
+                ]
+            },
+            "tra": {
+                "root": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        -0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                "sizeRef": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        -0.4,
+                        2.0,
+                        1.0
+                    ]
+                ]
+            }
+        },
+        "lwrMinor_L0": {
+            "apos": [
+                [
+                    0.5,
+                    -0.4,
+                    1.0
+                ],
+                [
+                    0.5,
+                    -0.4,
+                    1.9999999999999998
+                ]
+            ],
+            "atra": [
+                [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        0.5,
+                        -0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        0.5,
+                        -0.4,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            ],
+            "blade": {},
+            "child_components": [],
+            "param_values": {
+                "Override_Color": false,
+                "RGB_fk": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "RGB_ik": [
+                    0.0,
+                    0.25,
+                    1.0
+                ],
+                "Use_RGB_Color": false,
+                "addLeafJoint": false,
+                "add_full_name_param": false,
+                "color_fk": 6,
+                "color_ik": 18,
+                "comp_index": 0,
+                "comp_name": "lwrMinor",
+                "comp_side": "L",
+                "comp_type": "control_01",
+                "connector": "standard",
+                "ctlGrp": "lip",
+                "ctlNamesDescription": "['ctl']",
+                "ctlNamesDescription_custom": "['ctl']",
+                "ctlSize": 0.5,
+                "default_rotorder": 0,
+                "icon": "cube",
+                "ikrefarray": "",
+                "joint": true,
+                "joint_names": "",
+                "joint_rot_offset_x": 0.0,
+                "joint_rot_offset_y": 0.0,
+                "joint_rot_offset_z": 0.0,
+                "k_ro": true,
+                "k_rx": true,
+                "k_ry": true,
+                "k_rz": true,
+                "k_sx": true,
+                "k_sy": true,
+                "k_sz": true,
+                "k_tx": true,
+                "k_ty": true,
+                "k_tz": true,
+                "leafJoint": false,
+                "mirrorBehaviour": true,
+                "neutralRotation": false,
+                "parentJointIndex": -1,
+                "ui_host": "",
+                "uniScale": false,
+                "useIndex": false
+            },
+            "parent_fullName": "",
+            "parent_localName": "",
+            "pos": {
+                "root": [
+                    0.5,
+                    -0.4,
+                    1.0
+                ],
+                "sizeRef": [
+                    0.5,
+                    -0.4,
+                    1.9999999999999998
+                ]
+            },
+            "tra": {
+                "root": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        0.5,
+                        -0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                "sizeRef": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        0.5,
+                        -0.4,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            }
+        },
+        "lwrMinor_L1": {
+            "apos": [
+                [
+                    1.0,
+                    -0.4,
+                    1.0
+                ],
+                [
+                    1.0,
+                    -0.4,
+                    1.9999999999999998
+                ]
+            ],
+            "atra": [
+                [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        1.0,
+                        -0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        1.0,
+                        -0.4,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            ],
+            "blade": {},
+            "child_components": [],
+            "param_values": {
+                "Override_Color": false,
+                "RGB_fk": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "RGB_ik": [
+                    0.0,
+                    0.25,
+                    1.0
+                ],
+                "Use_RGB_Color": false,
+                "addLeafJoint": false,
+                "add_full_name_param": false,
+                "color_fk": 6,
+                "color_ik": 18,
+                "comp_index": 1,
+                "comp_name": "lwrMinor",
+                "comp_side": "L",
+                "comp_type": "control_01",
+                "connector": "standard",
+                "ctlGrp": "lip",
+                "ctlNamesDescription": "['ctl']",
+                "ctlNamesDescription_custom": "['ctl']",
+                "ctlSize": 0.5,
+                "default_rotorder": 0,
+                "icon": "cube",
+                "ikrefarray": "",
+                "joint": true,
+                "joint_names": "",
+                "joint_rot_offset_x": 0.0,
+                "joint_rot_offset_y": 0.0,
+                "joint_rot_offset_z": 0.0,
+                "k_ro": true,
+                "k_rx": true,
+                "k_ry": true,
+                "k_rz": true,
+                "k_sx": true,
+                "k_sy": true,
+                "k_sz": true,
+                "k_tx": true,
+                "k_ty": true,
+                "k_tz": true,
+                "leafJoint": false,
+                "mirrorBehaviour": true,
+                "neutralRotation": false,
+                "parentJointIndex": -1,
+                "ui_host": "",
+                "uniScale": false,
+                "useIndex": false
+            },
+            "parent_fullName": "",
+            "parent_localName": "",
+            "pos": {
+                "root": [
+                    1.0,
+                    -0.4,
+                    1.0
+                ],
+                "sizeRef": [
+                    1.0,
+                    -0.4,
+                    1.9999999999999998
+                ]
+            },
+            "tra": {
+                "root": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        1.0,
+                        -0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                "sizeRef": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        1.0,
+                        -0.4,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            }
+        },
+        "lwrMinor_L2": {
+            "apos": [
+                [
+                    1.5,
+                    -0.4,
+                    1.0
+                ],
+                [
+                    1.5,
+                    -0.4,
+                    1.9999999999999998
+                ]
+            ],
+            "atra": [
+                [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        1.5,
+                        -0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        1.5,
+                        -0.4,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            ],
+            "blade": {},
+            "child_components": [],
+            "param_values": {
+                "Override_Color": false,
+                "RGB_fk": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "RGB_ik": [
+                    0.0,
+                    0.25,
+                    1.0
+                ],
+                "Use_RGB_Color": false,
+                "addLeafJoint": false,
+                "add_full_name_param": false,
+                "color_fk": 6,
+                "color_ik": 18,
+                "comp_index": 2,
+                "comp_name": "lwrMinor",
+                "comp_side": "L",
+                "comp_type": "control_01",
+                "connector": "standard",
+                "ctlGrp": "lip",
+                "ctlNamesDescription": "['ctl']",
+                "ctlNamesDescription_custom": "['ctl']",
+                "ctlSize": 0.5,
+                "default_rotorder": 0,
+                "icon": "cube",
+                "ikrefarray": "",
+                "joint": true,
+                "joint_names": "",
+                "joint_rot_offset_x": 0.0,
+                "joint_rot_offset_y": 0.0,
+                "joint_rot_offset_z": 0.0,
+                "k_ro": true,
+                "k_rx": true,
+                "k_ry": true,
+                "k_rz": true,
+                "k_sx": true,
+                "k_sy": true,
+                "k_sz": true,
+                "k_tx": true,
+                "k_ty": true,
+                "k_tz": true,
+                "leafJoint": false,
+                "mirrorBehaviour": true,
+                "neutralRotation": false,
+                "parentJointIndex": -1,
+                "ui_host": "",
+                "uniScale": false,
+                "useIndex": false
+            },
+            "parent_fullName": "",
+            "parent_localName": "",
+            "pos": {
+                "root": [
+                    1.5,
+                    -0.4,
+                    1.0
+                ],
+                "sizeRef": [
+                    1.5,
+                    -0.4,
+                    1.9999999999999998
+                ]
+            },
+            "tra": {
+                "root": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        1.5,
+                        -0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                "sizeRef": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        1.5,
+                        -0.4,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            }
+        },
+        "lwrMinor_R0": {
+            "apos": [
+                [
+                    -0.5000000000000001,
+                    -0.4,
+                    1.0
+                ],
+                [
+                    -0.5000000000000002,
+                    -0.4,
+                    1.9999999999999998
+                ]
+            ],
+            "atra": [
+                [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -0.5000000000000001,
+                        -0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -0.5000000000000002,
+                        -0.4,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            ],
+            "blade": {},
+            "child_components": [],
+            "param_values": {
+                "Override_Color": false,
+                "RGB_fk": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "RGB_ik": [
+                    0.0,
+                    0.25,
+                    1.0
+                ],
+                "Use_RGB_Color": false,
+                "addLeafJoint": false,
+                "add_full_name_param": false,
+                "color_fk": 6,
+                "color_ik": 18,
+                "comp_index": 0,
+                "comp_name": "lwrMinor",
+                "comp_side": "R",
+                "comp_type": "control_01",
+                "connector": "standard",
+                "ctlGrp": "lip",
+                "ctlNamesDescription": "['ctl']",
+                "ctlNamesDescription_custom": "['ctl']",
+                "ctlSize": 0.5,
+                "default_rotorder": 0,
+                "icon": "cube",
+                "ikrefarray": "",
+                "joint": true,
+                "joint_names": "",
+                "joint_rot_offset_x": 0.0,
+                "joint_rot_offset_y": 0.0,
+                "joint_rot_offset_z": 0.0,
+                "k_ro": true,
+                "k_rx": true,
+                "k_ry": true,
+                "k_rz": true,
+                "k_sx": true,
+                "k_sy": true,
+                "k_sz": true,
+                "k_tx": true,
+                "k_ty": true,
+                "k_tz": true,
+                "leafJoint": false,
+                "mirrorBehaviour": true,
+                "neutralRotation": false,
+                "parentJointIndex": -1,
+                "ui_host": "",
+                "uniScale": false,
+                "useIndex": false
+            },
+            "parent_fullName": "",
+            "parent_localName": "",
+            "pos": {
+                "root": [
+                    -0.5000000000000001,
+                    -0.4,
+                    1.0
+                ],
+                "sizeRef": [
+                    -0.5000000000000002,
+                    -0.4,
+                    1.9999999999999998
+                ]
+            },
+            "tra": {
+                "root": [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -0.5000000000000001,
+                        -0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                "sizeRef": [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -0.5000000000000002,
+                        -0.4,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            }
+        },
+        "lwrMinor_R1": {
+            "apos": [
+                [
+                    -1.0000000000000002,
+                    -0.4,
+                    1.0
+                ],
+                [
+                    -0.9999999999999999,
+                    -0.4000000000000009,
+                    1.9999999999999996
+                ]
+            ],
+            "atra": [
+                [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -1.0000000000000002,
+                        -0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.9999999999999999,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -0.9999999999999999,
+                        -0.4000000000000009,
+                        1.9999999999999996,
+                        1.0
+                    ]
+                ]
+            ],
+            "blade": {},
+            "child_components": [],
+            "param_values": {
+                "Override_Color": false,
+                "RGB_fk": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "RGB_ik": [
+                    0.0,
+                    0.25,
+                    1.0
+                ],
+                "Use_RGB_Color": false,
+                "addLeafJoint": false,
+                "add_full_name_param": false,
+                "color_fk": 6,
+                "color_ik": 18,
+                "comp_index": 1,
+                "comp_name": "lwrMinor",
+                "comp_side": "R",
+                "comp_type": "control_01",
+                "connector": "standard",
+                "ctlGrp": "lip",
+                "ctlNamesDescription": "['ctl']",
+                "ctlNamesDescription_custom": "['ctl']",
+                "ctlSize": 0.5,
+                "default_rotorder": 0,
+                "icon": "cube",
+                "ikrefarray": "",
+                "joint": true,
+                "joint_names": "",
+                "joint_rot_offset_x": 0.0,
+                "joint_rot_offset_y": 0.0,
+                "joint_rot_offset_z": 0.0,
+                "k_ro": true,
+                "k_rx": true,
+                "k_ry": true,
+                "k_rz": true,
+                "k_sx": true,
+                "k_sy": true,
+                "k_sz": true,
+                "k_tx": true,
+                "k_ty": true,
+                "k_tz": true,
+                "leafJoint": false,
+                "mirrorBehaviour": true,
+                "neutralRotation": false,
+                "parentJointIndex": -1,
+                "ui_host": "",
+                "uniScale": false,
+                "useIndex": false
+            },
+            "parent_fullName": "",
+            "parent_localName": "",
+            "pos": {
+                "root": [
+                    -1.0000000000000002,
+                    -0.4,
+                    1.0
+                ],
+                "sizeRef": [
+                    -0.9999999999999999,
+                    -0.4000000000000009,
+                    1.9999999999999996
+                ]
+            },
+            "tra": {
+                "root": [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -1.0000000000000002,
+                        -0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                "sizeRef": [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.9999999999999999,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -0.9999999999999999,
+                        -0.4000000000000009,
+                        1.9999999999999996,
+                        1.0
+                    ]
+                ]
+            }
+        },
+        "lwrMinor_R2": {
+            "apos": [
+                [
+                    -1.5000000000000002,
+                    -0.4,
+                    1.0
+                ],
+                [
+                    -1.5000000000000002,
+                    -0.4,
+                    2.0000000000000004
+                ]
+            ],
+            "atra": [
+                [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -1.5000000000000002,
+                        -0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473535e-16,
+                        0.0,
+                        1.0000000000000002,
+                        0.0
+                    ],
+                    [
+                        -1.5000000000000002,
+                        -0.4,
+                        2.0000000000000004,
+                        1.0
+                    ]
+                ]
+            ],
+            "blade": {},
+            "child_components": [],
+            "param_values": {
+                "Override_Color": false,
+                "RGB_fk": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "RGB_ik": [
+                    0.0,
+                    0.25,
+                    1.0
+                ],
+                "Use_RGB_Color": false,
+                "addLeafJoint": false,
+                "add_full_name_param": false,
+                "color_fk": 6,
+                "color_ik": 18,
+                "comp_index": 2,
+                "comp_name": "lwrMinor",
+                "comp_side": "R",
+                "comp_type": "control_01",
+                "connector": "standard",
+                "ctlGrp": "lip",
+                "ctlNamesDescription": "['ctl']",
+                "ctlNamesDescription_custom": "['ctl']",
+                "ctlSize": 0.5,
+                "default_rotorder": 0,
+                "icon": "cube",
+                "ikrefarray": "",
+                "joint": true,
+                "joint_names": "",
+                "joint_rot_offset_x": 0.0,
+                "joint_rot_offset_y": 0.0,
+                "joint_rot_offset_z": 0.0,
+                "k_ro": true,
+                "k_rx": true,
+                "k_ry": true,
+                "k_rz": true,
+                "k_sx": true,
+                "k_sy": true,
+                "k_sz": true,
+                "k_tx": true,
+                "k_ty": true,
+                "k_tz": true,
+                "leafJoint": false,
+                "mirrorBehaviour": true,
+                "neutralRotation": false,
+                "parentJointIndex": -1,
+                "ui_host": "",
+                "uniScale": false,
+                "useIndex": false
+            },
+            "parent_fullName": "",
+            "parent_localName": "",
+            "pos": {
+                "root": [
+                    -1.5000000000000002,
+                    -0.4,
+                    1.0
+                ],
+                "sizeRef": [
+                    -1.5000000000000002,
+                    -0.4,
+                    2.0000000000000004
+                ]
+            },
+            "tra": {
+                "root": [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -1.5000000000000002,
+                        -0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                "sizeRef": [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473535e-16,
+                        0.0,
+                        1.0000000000000002,
+                        0.0
+                    ],
+                    [
+                        -1.5000000000000002,
+                        -0.4,
+                        2.0000000000000004,
+                        1.0
+                    ]
+                ]
+            }
+        },
+        "lwrPinch_L0": {
+            "apos": [
+                [
+                    2.2,
+                    -0.4,
+                    1.0
+                ],
+                [
+                    2.2,
+                    -0.4,
+                    1.9999999999999998
+                ]
+            ],
+            "atra": [
+                [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        2.2,
+                        -0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        2.2,
+                        -0.4,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            ],
+            "blade": {},
+            "child_components": [],
+            "param_values": {
+                "Override_Color": false,
+                "RGB_fk": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "RGB_ik": [
+                    0.0,
+                    0.25,
+                    1.0
+                ],
+                "Use_RGB_Color": false,
+                "addLeafJoint": false,
+                "add_full_name_param": false,
+                "color_fk": 6,
+                "color_ik": 18,
+                "comp_index": 0,
+                "comp_name": "lwrPinch",
+                "comp_side": "L",
+                "comp_type": "control_01",
+                "connector": "standard",
+                "ctlGrp": "lip",
+                "ctlNamesDescription": "['ctl']",
+                "ctlNamesDescription_custom": "['ctl']",
+                "ctlSize": 0.5,
+                "default_rotorder": 0,
+                "icon": "cube",
+                "ikrefarray": "",
+                "joint": true,
+                "joint_names": "",
+                "joint_rot_offset_x": 0.0,
+                "joint_rot_offset_y": 0.0,
+                "joint_rot_offset_z": 0.0,
+                "k_ro": true,
+                "k_rx": true,
+                "k_ry": true,
+                "k_rz": true,
+                "k_sx": true,
+                "k_sy": true,
+                "k_sz": true,
+                "k_tx": true,
+                "k_ty": true,
+                "k_tz": true,
+                "leafJoint": false,
+                "mirrorBehaviour": true,
+                "neutralRotation": false,
+                "parentJointIndex": -1,
+                "ui_host": "",
+                "uniScale": false,
+                "useIndex": false
+            },
+            "parent_fullName": "",
+            "parent_localName": "",
+            "pos": {
+                "root": [
+                    2.2,
+                    -0.4,
+                    1.0
+                ],
+                "sizeRef": [
+                    2.2,
+                    -0.4,
+                    1.9999999999999998
+                ]
+            },
+            "tra": {
+                "root": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        2.2,
+                        -0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                "sizeRef": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        2.2,
+                        -0.4,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            }
+        },
+        "lwrPinch_R0": {
+            "apos": [
+                [
+                    -2.2,
+                    -0.4,
+                    1.0
+                ],
+                [
+                    -2.2,
+                    -0.4,
+                    2.0
+                ]
+            ],
+            "atra": [
+                [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -2.2,
+                        -0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473535e-16,
+                        0.0,
+                        1.0000000000000002,
+                        0.0
+                    ],
+                    [
+                        -2.2,
+                        -0.4,
+                        2.0,
+                        1.0
+                    ]
+                ]
+            ],
+            "blade": {},
+            "child_components": [],
+            "param_values": {
+                "Override_Color": false,
+                "RGB_fk": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "RGB_ik": [
+                    0.0,
+                    0.25,
+                    1.0
+                ],
+                "Use_RGB_Color": false,
+                "addLeafJoint": false,
+                "add_full_name_param": false,
+                "color_fk": 6,
+                "color_ik": 18,
+                "comp_index": 0,
+                "comp_name": "lwrPinch",
+                "comp_side": "R",
+                "comp_type": "control_01",
+                "connector": "standard",
+                "ctlGrp": "lip",
+                "ctlNamesDescription": "['ctl']",
+                "ctlNamesDescription_custom": "['ctl']",
+                "ctlSize": 0.5,
+                "default_rotorder": 0,
+                "icon": "cube",
+                "ikrefarray": "",
+                "joint": true,
+                "joint_names": "",
+                "joint_rot_offset_x": 0.0,
+                "joint_rot_offset_y": 0.0,
+                "joint_rot_offset_z": 0.0,
+                "k_ro": true,
+                "k_rx": true,
+                "k_ry": true,
+                "k_rz": true,
+                "k_sx": true,
+                "k_sy": true,
+                "k_sz": true,
+                "k_tx": true,
+                "k_ty": true,
+                "k_tz": true,
+                "leafJoint": false,
+                "mirrorBehaviour": true,
+                "neutralRotation": false,
+                "parentJointIndex": -1,
+                "ui_host": "",
+                "uniScale": false,
+                "useIndex": false
+            },
+            "parent_fullName": "",
+            "parent_localName": "",
+            "pos": {
+                "root": [
+                    -2.2,
+                    -0.4,
+                    1.0
+                ],
+                "sizeRef": [
+                    -2.2,
+                    -0.4,
+                    2.0
+                ]
+            },
+            "tra": {
+                "root": [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -2.2,
+                        -0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                "sizeRef": [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473535e-16,
+                        0.0,
+                        1.0000000000000002,
+                        0.0
+                    ],
+                    [
+                        -2.2,
+                        -0.4,
+                        2.0,
+                        1.0
+                    ]
+                ]
+            }
+        },
+        "uprCnr_L0": {
+            "apos": [
+                [
+                    2.5,
+                    0.0,
+                    1.0
+                ],
+                [
+                    2.5,
+                    0.0,
+                    1.9999999999999998
+                ]
+            ],
+            "atra": [
+                [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        2.5,
+                        0.0,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        2.5,
+                        0.0,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            ],
+            "blade": {},
+            "child_components": [],
+            "param_values": {
+                "Override_Color": false,
+                "RGB_fk": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "RGB_ik": [
+                    0.0,
+                    0.25,
+                    1.0
+                ],
+                "Use_RGB_Color": false,
+                "addLeafJoint": false,
+                "add_full_name_param": false,
+                "color_fk": 6,
+                "color_ik": 18,
+                "comp_index": 0,
+                "comp_name": "uprCnr",
+                "comp_side": "L",
+                "comp_type": "control_01",
+                "connector": "standard",
+                "ctlGrp": "lip",
+                "ctlNamesDescription": "['ctl']",
+                "ctlNamesDescription_custom": "['ctl']",
+                "ctlSize": 0.5,
+                "default_rotorder": 0,
+                "icon": "cube",
+                "ikrefarray": "",
+                "joint": true,
+                "joint_names": "",
+                "joint_rot_offset_x": 0.0,
+                "joint_rot_offset_y": 0.0,
+                "joint_rot_offset_z": 0.0,
+                "k_ro": true,
+                "k_rx": true,
+                "k_ry": true,
+                "k_rz": true,
+                "k_sx": true,
+                "k_sy": true,
+                "k_sz": true,
+                "k_tx": true,
+                "k_ty": true,
+                "k_tz": true,
+                "leafJoint": false,
+                "mirrorBehaviour": true,
+                "neutralRotation": false,
+                "parentJointIndex": -1,
+                "ui_host": "",
+                "uniScale": false,
+                "useIndex": false
+            },
+            "parent_fullName": "",
+            "parent_localName": "",
+            "pos": {
+                "root": [
+                    2.5,
+                    0.0,
+                    1.0
+                ],
+                "sizeRef": [
+                    2.5,
+                    0.0,
+                    1.9999999999999998
+                ]
+            },
+            "tra": {
+                "root": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        2.5,
+                        0.0,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                "sizeRef": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        2.5,
+                        0.0,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            }
+        },
+        "uprCnr_R0": {
+            "apos": [
+                [
+                    -2.5,
+                    0.0,
+                    1.0
+                ],
+                [
+                    -2.5,
+                    0.0,
+                    1.9999999999999996
+                ]
+            ],
+            "atra": [
+                [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -2.5,
+                        0.0,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -2.5,
+                        0.0,
+                        1.9999999999999996,
+                        1.0
+                    ]
+                ]
+            ],
+            "blade": {},
+            "child_components": [],
+            "param_values": {
+                "Override_Color": false,
+                "RGB_fk": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "RGB_ik": [
+                    0.0,
+                    0.25,
+                    1.0
+                ],
+                "Use_RGB_Color": false,
+                "addLeafJoint": false,
+                "add_full_name_param": false,
+                "color_fk": 6,
+                "color_ik": 18,
+                "comp_index": 0,
+                "comp_name": "uprCnr",
+                "comp_side": "R",
+                "comp_type": "control_01",
+                "connector": "standard",
+                "ctlGrp": "lip",
+                "ctlNamesDescription": "['ctl']",
+                "ctlNamesDescription_custom": "['ctl']",
+                "ctlSize": 0.5,
+                "default_rotorder": 0,
+                "icon": "cube",
+                "ikrefarray": "",
+                "joint": true,
+                "joint_names": "",
+                "joint_rot_offset_x": 0.0,
+                "joint_rot_offset_y": 0.0,
+                "joint_rot_offset_z": 0.0,
+                "k_ro": true,
+                "k_rx": true,
+                "k_ry": true,
+                "k_rz": true,
+                "k_sx": true,
+                "k_sy": true,
+                "k_sz": true,
+                "k_tx": true,
+                "k_ty": true,
+                "k_tz": true,
+                "leafJoint": false,
+                "mirrorBehaviour": true,
+                "neutralRotation": false,
+                "parentJointIndex": -1,
+                "ui_host": "",
+                "uniScale": false,
+                "useIndex": false
+            },
+            "parent_fullName": "",
+            "parent_localName": "",
+            "pos": {
+                "root": [
+                    -2.5,
+                    0.0,
+                    1.0
+                ],
+                "sizeRef": [
+                    -2.5,
+                    0.0,
+                    1.9999999999999996
+                ]
+            },
+            "tra": {
+                "root": [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -2.5,
+                        0.0,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                "sizeRef": [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -2.5,
+                        0.0,
+                        1.9999999999999996,
+                        1.0
+                    ]
+                ]
+            }
+        },
+        "uprMajor_C0": {
+            "apos": [
+                [
+                    0.0,
+                    0.4,
+                    1.0
+                ],
+                [
+                    0.0,
+                    0.39999999999999997,
+                    2.3571950223745217
+                ]
+            ],
+            "atra": [
+                [
+                    [
+                        1.3571950223745222,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.3571950223745222,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.3571950223745222,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        1.3571950223745222,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.3571950223745222,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.3571950223745222,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.39999999999999997,
+                        2.3571950223745217,
+                        1.0
+                    ]
+                ]
+            ],
+            "blade": {},
+            "child_components": [],
+            "param_values": {
+                "Override_Color": false,
+                "RGB_fk": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "RGB_ik": [
+                    0.0,
+                    0.25,
+                    1.0
+                ],
+                "Use_RGB_Color": false,
+                "addLeafJoint": false,
+                "add_full_name_param": false,
+                "color_fk": 6,
+                "color_ik": 18,
+                "comp_index": 0,
+                "comp_name": "uprMajor",
+                "comp_side": "C",
+                "comp_type": "control_01",
+                "connector": "standard",
+                "ctlGrp": "lip",
+                "ctlNamesDescription": "['ctl']",
+                "ctlNamesDescription_custom": "['ctl']",
+                "ctlSize": 1.0,
+                "default_rotorder": 0,
+                "icon": "cube",
+                "ikrefarray": "",
+                "joint": true,
+                "joint_names": "",
+                "joint_rot_offset_x": 0.0,
+                "joint_rot_offset_y": 0.0,
+                "joint_rot_offset_z": 0.0,
+                "k_ro": true,
+                "k_rx": true,
+                "k_ry": true,
+                "k_rz": true,
+                "k_sx": true,
+                "k_sy": true,
+                "k_sz": true,
+                "k_tx": true,
+                "k_ty": true,
+                "k_tz": true,
+                "leafJoint": false,
+                "mirrorBehaviour": true,
+                "neutralRotation": false,
+                "parentJointIndex": -1,
+                "ui_host": "",
+                "uniScale": false,
+                "useIndex": false
+            },
+            "parent_fullName": "",
+            "parent_localName": "",
+            "pos": {
+                "root": [
+                    0.0,
+                    0.4,
+                    1.0
+                ],
+                "sizeRef": [
+                    0.0,
+                    0.39999999999999997,
+                    2.3571950223745217
+                ]
+            },
+            "tra": {
+                "root": [
+                    [
+                        1.3571950223745222,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.3571950223745222,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.3571950223745222,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                "sizeRef": [
+                    [
+                        1.3571950223745222,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.3571950223745222,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.3571950223745222,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.39999999999999997,
+                        2.3571950223745217,
+                        1.0
+                    ]
+                ]
+            }
+        },
+        "uprMinor_C0": {
+            "apos": [
+                [
+                    0.0,
+                    0.4,
+                    1.0
+                ],
+                [
+                    0.0,
+                    0.4,
+                    1.9999999999999998
+                ]
+            ],
+            "atra": [
+                [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.4,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            ],
+            "blade": {},
+            "child_components": [],
+            "param_values": {
+                "Override_Color": false,
+                "RGB_fk": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "RGB_ik": [
+                    0.0,
+                    0.25,
+                    1.0
+                ],
+                "Use_RGB_Color": false,
+                "addLeafJoint": false,
+                "add_full_name_param": false,
+                "color_fk": 6,
+                "color_ik": 18,
+                "comp_index": 0,
+                "comp_name": "uprMinor",
+                "comp_side": "C",
+                "comp_type": "control_01",
+                "connector": "standard",
+                "ctlGrp": "lip",
+                "ctlNamesDescription": "['ctl']",
+                "ctlNamesDescription_custom": "['ctl']",
+                "ctlSize": 0.5,
+                "default_rotorder": 0,
+                "icon": "cube",
+                "ikrefarray": "",
+                "joint": true,
+                "joint_names": "",
+                "joint_rot_offset_x": 0.0,
+                "joint_rot_offset_y": 0.0,
+                "joint_rot_offset_z": 0.0,
+                "k_ro": true,
+                "k_rx": true,
+                "k_ry": true,
+                "k_rz": true,
+                "k_sx": true,
+                "k_sy": true,
+                "k_sz": true,
+                "k_tx": true,
+                "k_ty": true,
+                "k_tz": true,
+                "leafJoint": false,
+                "mirrorBehaviour": true,
+                "neutralRotation": false,
+                "parentJointIndex": -1,
+                "ui_host": "",
+                "uniScale": false,
+                "useIndex": false
+            },
+            "parent_fullName": "",
+            "parent_localName": "",
+            "pos": {
+                "root": [
+                    0.0,
+                    0.4,
+                    1.0
+                ],
+                "sizeRef": [
+                    0.0,
+                    0.4,
+                    1.9999999999999998
+                ]
+            },
+            "tra": {
+                "root": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                "sizeRef": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.4,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            }
+        },
+        "uprMinor_L0": {
+            "apos": [
+                [
+                    0.5,
+                    0.4,
+                    1.0
+                ],
+                [
+                    0.5,
+                    0.4,
+                    1.9999999999999998
+                ]
+            ],
+            "atra": [
+                [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        0.5,
+                        0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        0.5,
+                        0.4,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            ],
+            "blade": {},
+            "child_components": [],
+            "param_values": {
+                "Override_Color": false,
+                "RGB_fk": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "RGB_ik": [
+                    0.0,
+                    0.25,
+                    1.0
+                ],
+                "Use_RGB_Color": false,
+                "addLeafJoint": false,
+                "add_full_name_param": false,
+                "color_fk": 6,
+                "color_ik": 18,
+                "comp_index": 0,
+                "comp_name": "uprMinor",
+                "comp_side": "L",
+                "comp_type": "control_01",
+                "connector": "standard",
+                "ctlGrp": "lip",
+                "ctlNamesDescription": "['ctl']",
+                "ctlNamesDescription_custom": "['ctl']",
+                "ctlSize": 0.5,
+                "default_rotorder": 0,
+                "icon": "cube",
+                "ikrefarray": "",
+                "joint": true,
+                "joint_names": "",
+                "joint_rot_offset_x": 0.0,
+                "joint_rot_offset_y": 0.0,
+                "joint_rot_offset_z": 0.0,
+                "k_ro": true,
+                "k_rx": true,
+                "k_ry": true,
+                "k_rz": true,
+                "k_sx": true,
+                "k_sy": true,
+                "k_sz": true,
+                "k_tx": true,
+                "k_ty": true,
+                "k_tz": true,
+                "leafJoint": false,
+                "mirrorBehaviour": true,
+                "neutralRotation": false,
+                "parentJointIndex": -1,
+                "ui_host": "",
+                "uniScale": false,
+                "useIndex": false
+            },
+            "parent_fullName": "",
+            "parent_localName": "",
+            "pos": {
+                "root": [
+                    0.5,
+                    0.4,
+                    1.0
+                ],
+                "sizeRef": [
+                    0.5,
+                    0.4,
+                    1.9999999999999998
+                ]
+            },
+            "tra": {
+                "root": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        0.5,
+                        0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                "sizeRef": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        0.5,
+                        0.4,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            }
+        },
+        "uprMinor_L1": {
+            "apos": [
+                [
+                    1.0,
+                    0.4,
+                    1.0
+                ],
+                [
+                    1.0,
+                    0.4,
+                    1.9999999999999998
+                ]
+            ],
+            "atra": [
+                [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        1.0,
+                        0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        1.0,
+                        0.4,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            ],
+            "blade": {},
+            "child_components": [],
+            "param_values": {
+                "Override_Color": false,
+                "RGB_fk": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "RGB_ik": [
+                    0.0,
+                    0.25,
+                    1.0
+                ],
+                "Use_RGB_Color": false,
+                "addLeafJoint": false,
+                "add_full_name_param": false,
+                "color_fk": 6,
+                "color_ik": 18,
+                "comp_index": 1,
+                "comp_name": "uprMinor",
+                "comp_side": "L",
+                "comp_type": "control_01",
+                "connector": "standard",
+                "ctlGrp": "lip",
+                "ctlNamesDescription": "['ctl']",
+                "ctlNamesDescription_custom": "['ctl']",
+                "ctlSize": 0.5,
+                "default_rotorder": 0,
+                "icon": "cube",
+                "ikrefarray": "",
+                "joint": true,
+                "joint_names": "",
+                "joint_rot_offset_x": 0.0,
+                "joint_rot_offset_y": 0.0,
+                "joint_rot_offset_z": 0.0,
+                "k_ro": true,
+                "k_rx": true,
+                "k_ry": true,
+                "k_rz": true,
+                "k_sx": true,
+                "k_sy": true,
+                "k_sz": true,
+                "k_tx": true,
+                "k_ty": true,
+                "k_tz": true,
+                "leafJoint": false,
+                "mirrorBehaviour": true,
+                "neutralRotation": false,
+                "parentJointIndex": -1,
+                "ui_host": "",
+                "uniScale": false,
+                "useIndex": false
+            },
+            "parent_fullName": "",
+            "parent_localName": "",
+            "pos": {
+                "root": [
+                    1.0,
+                    0.4,
+                    1.0
+                ],
+                "sizeRef": [
+                    1.0,
+                    0.4,
+                    1.9999999999999998
+                ]
+            },
+            "tra": {
+                "root": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        1.0,
+                        0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                "sizeRef": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        1.0,
+                        0.4,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            }
+        },
+        "uprMinor_L2": {
+            "apos": [
+                [
+                    1.5,
+                    0.4,
+                    1.0
+                ],
+                [
+                    1.5,
+                    0.4,
+                    1.9999999999999998
+                ]
+            ],
+            "atra": [
+                [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        1.5,
+                        0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        1.5,
+                        0.4,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            ],
+            "blade": {},
+            "child_components": [],
+            "param_values": {
+                "Override_Color": false,
+                "RGB_fk": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "RGB_ik": [
+                    0.0,
+                    0.25,
+                    1.0
+                ],
+                "Use_RGB_Color": false,
+                "addLeafJoint": false,
+                "add_full_name_param": false,
+                "color_fk": 6,
+                "color_ik": 18,
+                "comp_index": 2,
+                "comp_name": "uprMinor",
+                "comp_side": "L",
+                "comp_type": "control_01",
+                "connector": "standard",
+                "ctlGrp": "lip",
+                "ctlNamesDescription": "['ctl']",
+                "ctlNamesDescription_custom": "['ctl']",
+                "ctlSize": 0.5,
+                "default_rotorder": 0,
+                "icon": "cube",
+                "ikrefarray": "",
+                "joint": true,
+                "joint_names": "",
+                "joint_rot_offset_x": 0.0,
+                "joint_rot_offset_y": 0.0,
+                "joint_rot_offset_z": 0.0,
+                "k_ro": true,
+                "k_rx": true,
+                "k_ry": true,
+                "k_rz": true,
+                "k_sx": true,
+                "k_sy": true,
+                "k_sz": true,
+                "k_tx": true,
+                "k_ty": true,
+                "k_tz": true,
+                "leafJoint": false,
+                "mirrorBehaviour": true,
+                "neutralRotation": false,
+                "parentJointIndex": -1,
+                "ui_host": "",
+                "uniScale": false,
+                "useIndex": false
+            },
+            "parent_fullName": "",
+            "parent_localName": "",
+            "pos": {
+                "root": [
+                    1.5,
+                    0.4,
+                    1.0
+                ],
+                "sizeRef": [
+                    1.5,
+                    0.4,
+                    1.9999999999999998
+                ]
+            },
+            "tra": {
+                "root": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        1.5,
+                        0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                "sizeRef": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        1.5,
+                        0.4,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            }
+        },
+        "uprMinor_R0": {
+            "apos": [
+                [
+                    -0.5000000000000001,
+                    0.4,
+                    1.0
+                ],
+                [
+                    -0.5000000000000002,
+                    0.4,
+                    1.9999999999999998
+                ]
+            ],
+            "atra": [
+                [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -0.5000000000000001,
+                        0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -0.5000000000000002,
+                        0.4,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            ],
+            "blade": {},
+            "child_components": [],
+            "param_values": {
+                "Override_Color": false,
+                "RGB_fk": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "RGB_ik": [
+                    0.0,
+                    0.25,
+                    1.0
+                ],
+                "Use_RGB_Color": false,
+                "addLeafJoint": false,
+                "add_full_name_param": false,
+                "color_fk": 6,
+                "color_ik": 18,
+                "comp_index": 0,
+                "comp_name": "uprMinor",
+                "comp_side": "R",
+                "comp_type": "control_01",
+                "connector": "standard",
+                "ctlGrp": "lip",
+                "ctlNamesDescription": "['ctl']",
+                "ctlNamesDescription_custom": "['ctl']",
+                "ctlSize": 0.5,
+                "default_rotorder": 0,
+                "icon": "cube",
+                "ikrefarray": "",
+                "joint": true,
+                "joint_names": "",
+                "joint_rot_offset_x": 0.0,
+                "joint_rot_offset_y": 0.0,
+                "joint_rot_offset_z": 0.0,
+                "k_ro": true,
+                "k_rx": true,
+                "k_ry": true,
+                "k_rz": true,
+                "k_sx": true,
+                "k_sy": true,
+                "k_sz": true,
+                "k_tx": true,
+                "k_ty": true,
+                "k_tz": true,
+                "leafJoint": false,
+                "mirrorBehaviour": true,
+                "neutralRotation": false,
+                "parentJointIndex": -1,
+                "ui_host": "",
+                "uniScale": false,
+                "useIndex": false
+            },
+            "parent_fullName": "",
+            "parent_localName": "",
+            "pos": {
+                "root": [
+                    -0.5000000000000001,
+                    0.4,
+                    1.0
+                ],
+                "sizeRef": [
+                    -0.5000000000000002,
+                    0.4,
+                    1.9999999999999998
+                ]
+            },
+            "tra": {
+                "root": [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -0.5000000000000001,
+                        0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                "sizeRef": [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -0.5000000000000002,
+                        0.4,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            }
+        },
+        "uprMinor_R1": {
+            "apos": [
+                [
+                    -1.0000000000000002,
+                    0.4,
+                    1.0
+                ],
+                [
+                    -1.0000000000000004,
+                    0.39999999999999913,
+                    1.9999999999999998
+                ]
+            ],
+            "atra": [
+                [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -1.0000000000000002,
+                        0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -1.0000000000000004,
+                        0.39999999999999913,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            ],
+            "blade": {},
+            "child_components": [],
+            "param_values": {
+                "Override_Color": false,
+                "RGB_fk": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "RGB_ik": [
+                    0.0,
+                    0.25,
+                    1.0
+                ],
+                "Use_RGB_Color": false,
+                "addLeafJoint": false,
+                "add_full_name_param": false,
+                "color_fk": 6,
+                "color_ik": 18,
+                "comp_index": 1,
+                "comp_name": "uprMinor",
+                "comp_side": "R",
+                "comp_type": "control_01",
+                "connector": "standard",
+                "ctlGrp": "lip",
+                "ctlNamesDescription": "['ctl']",
+                "ctlNamesDescription_custom": "['ctl']",
+                "ctlSize": 0.5,
+                "default_rotorder": 0,
+                "icon": "cube",
+                "ikrefarray": "",
+                "joint": true,
+                "joint_names": "",
+                "joint_rot_offset_x": 0.0,
+                "joint_rot_offset_y": 0.0,
+                "joint_rot_offset_z": 0.0,
+                "k_ro": true,
+                "k_rx": true,
+                "k_ry": true,
+                "k_rz": true,
+                "k_sx": true,
+                "k_sy": true,
+                "k_sz": true,
+                "k_tx": true,
+                "k_ty": true,
+                "k_tz": true,
+                "leafJoint": false,
+                "mirrorBehaviour": true,
+                "neutralRotation": false,
+                "parentJointIndex": -1,
+                "ui_host": "",
+                "uniScale": false,
+                "useIndex": false
+            },
+            "parent_fullName": "",
+            "parent_localName": "",
+            "pos": {
+                "root": [
+                    -1.0000000000000002,
+                    0.4,
+                    1.0
+                ],
+                "sizeRef": [
+                    -1.0000000000000004,
+                    0.39999999999999913,
+                    1.9999999999999998
+                ]
+            },
+            "tra": {
+                "root": [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -1.0000000000000002,
+                        0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                "sizeRef": [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -1.0000000000000004,
+                        0.39999999999999913,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            }
+        },
+        "uprMinor_R2": {
+            "apos": [
+                [
+                    -1.5000000000000002,
+                    0.4,
+                    1.0
+                ],
+                [
+                    -1.5,
+                    0.4,
+                    2.0
+                ]
+            ],
+            "atra": [
+                [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -1.5000000000000002,
+                        0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473535e-16,
+                        0.0,
+                        1.0000000000000002,
+                        0.0
+                    ],
+                    [
+                        -1.5,
+                        0.4,
+                        2.0,
+                        1.0
+                    ]
+                ]
+            ],
+            "blade": {},
+            "child_components": [],
+            "param_values": {
+                "Override_Color": false,
+                "RGB_fk": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "RGB_ik": [
+                    0.0,
+                    0.25,
+                    1.0
+                ],
+                "Use_RGB_Color": false,
+                "addLeafJoint": false,
+                "add_full_name_param": false,
+                "color_fk": 6,
+                "color_ik": 18,
+                "comp_index": 2,
+                "comp_name": "uprMinor",
+                "comp_side": "R",
+                "comp_type": "control_01",
+                "connector": "standard",
+                "ctlGrp": "lip",
+                "ctlNamesDescription": "['ctl']",
+                "ctlNamesDescription_custom": "['ctl']",
+                "ctlSize": 0.5,
+                "default_rotorder": 0,
+                "icon": "cube",
+                "ikrefarray": "",
+                "joint": true,
+                "joint_names": "",
+                "joint_rot_offset_x": 0.0,
+                "joint_rot_offset_y": 0.0,
+                "joint_rot_offset_z": 0.0,
+                "k_ro": true,
+                "k_rx": true,
+                "k_ry": true,
+                "k_rz": true,
+                "k_sx": true,
+                "k_sy": true,
+                "k_sz": true,
+                "k_tx": true,
+                "k_ty": true,
+                "k_tz": true,
+                "leafJoint": false,
+                "mirrorBehaviour": true,
+                "neutralRotation": false,
+                "parentJointIndex": -1,
+                "ui_host": "",
+                "uniScale": false,
+                "useIndex": false
+            },
+            "parent_fullName": "",
+            "parent_localName": "",
+            "pos": {
+                "root": [
+                    -1.5000000000000002,
+                    0.4,
+                    1.0
+                ],
+                "sizeRef": [
+                    -1.5,
+                    0.4,
+                    2.0
+                ]
+            },
+            "tra": {
+                "root": [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -1.5000000000000002,
+                        0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                "sizeRef": [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473535e-16,
+                        0.0,
+                        1.0000000000000002,
+                        0.0
+                    ],
+                    [
+                        -1.5,
+                        0.4,
+                        2.0,
+                        1.0
+                    ]
+                ]
+            }
+        },
+        "uprPinch_L0": {
+            "apos": [
+                [
+                    2.2,
+                    0.4,
+                    1.0
+                ],
+                [
+                    2.2,
+                    0.4,
+                    1.9999999999999998
+                ]
+            ],
+            "atra": [
+                [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        2.2,
+                        0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        2.2,
+                        0.4,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            ],
+            "blade": {},
+            "child_components": [],
+            "param_values": {
+                "Override_Color": false,
+                "RGB_fk": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "RGB_ik": [
+                    0.0,
+                    0.25,
+                    1.0
+                ],
+                "Use_RGB_Color": false,
+                "addLeafJoint": false,
+                "add_full_name_param": false,
+                "color_fk": 6,
+                "color_ik": 18,
+                "comp_index": 0,
+                "comp_name": "uprPinch",
+                "comp_side": "L",
+                "comp_type": "control_01",
+                "connector": "standard",
+                "ctlGrp": "lip",
+                "ctlNamesDescription": "['ctl']",
+                "ctlNamesDescription_custom": "['ctl']",
+                "ctlSize": 0.5,
+                "default_rotorder": 0,
+                "icon": "cube",
+                "ikrefarray": "",
+                "joint": true,
+                "joint_names": "",
+                "joint_rot_offset_x": 0.0,
+                "joint_rot_offset_y": 0.0,
+                "joint_rot_offset_z": 0.0,
+                "k_ro": true,
+                "k_rx": true,
+                "k_ry": true,
+                "k_rz": true,
+                "k_sx": true,
+                "k_sy": true,
+                "k_sz": true,
+                "k_tx": true,
+                "k_ty": true,
+                "k_tz": true,
+                "leafJoint": false,
+                "mirrorBehaviour": true,
+                "neutralRotation": false,
+                "parentJointIndex": -1,
+                "ui_host": "",
+                "uniScale": false,
+                "useIndex": false
+            },
+            "parent_fullName": "",
+            "parent_localName": "",
+            "pos": {
+                "root": [
+                    2.2,
+                    0.4,
+                    1.0
+                ],
+                "sizeRef": [
+                    2.2,
+                    0.4,
+                    1.9999999999999998
+                ]
+            },
+            "tra": {
+                "root": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        2.2,
+                        0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                "sizeRef": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        2.2,
+                        0.4,
+                        1.9999999999999998,
+                        1.0
+                    ]
+                ]
+            }
+        },
+        "uprPinch_R0": {
+            "apos": [
+                [
+                    -2.2,
+                    0.4,
+                    1.0
+                ],
+                [
+                    -2.1999999999999997,
+                    0.4,
+                    1.9999999999999996
+                ]
+            ],
+            "atra": [
+                [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -2.2,
+                        0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                [
+                    [
+                        -0.9999999999999999,
+                        0.0,
+                        -1.224646799147353e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473535e-16,
+                        0.0,
+                        1.0000000000000002,
+                        0.0
+                    ],
+                    [
+                        -2.1999999999999997,
+                        0.4,
+                        1.9999999999999996,
+                        1.0
+                    ]
+                ]
+            ],
+            "blade": {},
+            "child_components": [],
+            "param_values": {
+                "Override_Color": false,
+                "RGB_fk": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "RGB_ik": [
+                    0.0,
+                    0.25,
+                    1.0
+                ],
+                "Use_RGB_Color": false,
+                "addLeafJoint": false,
+                "add_full_name_param": false,
+                "color_fk": 6,
+                "color_ik": 18,
+                "comp_index": 0,
+                "comp_name": "uprPinch",
+                "comp_side": "R",
+                "comp_type": "control_01",
+                "connector": "standard",
+                "ctlGrp": "lip",
+                "ctlNamesDescription": "['ctl']",
+                "ctlNamesDescription_custom": "['ctl']",
+                "ctlSize": 0.5,
+                "default_rotorder": 0,
+                "icon": "cube",
+                "ikrefarray": "",
+                "joint": true,
+                "joint_names": "",
+                "joint_rot_offset_x": 0.0,
+                "joint_rot_offset_y": 0.0,
+                "joint_rot_offset_z": 0.0,
+                "k_ro": true,
+                "k_rx": true,
+                "k_ry": true,
+                "k_rz": true,
+                "k_sx": true,
+                "k_sy": true,
+                "k_sz": true,
+                "k_tx": true,
+                "k_ty": true,
+                "k_tz": true,
+                "leafJoint": false,
+                "mirrorBehaviour": true,
+                "neutralRotation": false,
+                "parentJointIndex": -1,
+                "ui_host": "",
+                "uniScale": false,
+                "useIndex": false
+            },
+            "parent_fullName": "",
+            "parent_localName": "",
+            "pos": {
+                "root": [
+                    -2.2,
+                    0.4,
+                    1.0
+                ],
+                "sizeRef": [
+                    -2.1999999999999997,
+                    0.4,
+                    1.9999999999999996
+                ]
+            },
+            "tra": {
+                "root": [
+                    [
+                        -1.0,
+                        0.0,
+                        -1.2246467991473532e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473532e-16,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        -2.2,
+                        0.4,
+                        1.0,
+                        1.0
+                    ]
+                ],
+                "sizeRef": [
+                    [
+                        -0.9999999999999999,
+                        0.0,
+                        -1.224646799147353e-16,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        -1.2246467991473535e-16,
+                        0.0,
+                        1.0000000000000002,
+                        0.0
+                    ],
+                    [
+                        -2.1999999999999997,
+                        0.4,
+                        1.9999999999999996,
+                        1.0
+                    ]
+                ]
+            }
+        }
+    },
+    "components_list": [
+        "lwrMajor_C0",
+        "lwrMinor_C0",
+        "lwrMinor_L0",
+        "lwrMinor_L1",
+        "lwrMinor_L2",
+        "lwrMinor_R0",
+        "lwrMinor_R1",
+        "lwrMinor_R2",
+        "lwrPinch_L0",
+        "lwrPinch_R0",
+        "uprCnr_L0",
+        "uprCnr_R0",
+        "uprMajor_C0",
+        "uprMinor_C0",
+        "uprMinor_L0",
+        "uprMinor_L1",
+        "uprMinor_L2",
+        "uprMinor_R0",
+        "uprMinor_R1",
+        "uprMinor_R2",
+        "uprPinch_L0",
+        "uprPinch_R0"
+    ],
+    "ctl_buffers_dict": null,
+    "guide_root": {
+        "name": "guide",
+        "param_values": {
+            "C_RGB_fk": [
+                1.0,
+                1.0,
+                0.0
+            ],
+            "C_RGB_ik": [
+                0.0,
+                0.6000000238418579,
+                0.0
+            ],
+            "C_color_fk": 13,
+            "C_color_ik": 17,
+            "L_RGB_fk": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "L_RGB_ik": [
+                0.0,
+                0.25,
+                1.0
+            ],
+            "L_color_fk": 6,
+            "L_color_ik": 18,
+            "R_RGB_fk": [
+                1.0,
+                0.0,
+                0.0
+            ],
+            "R_RGB_ik": [
+                1.0,
+                0.10000000149011612,
+                0.25
+            ],
+            "R_color_fk": 23,
+            "R_color_ik": 14,
+            "Use_RGB_Color": false,
+            "attrPrefixName": false,
+            "classicChannelNames": false,
+            "comments": "",
+            "connect_joints": true,
+            "ctl_description_letter_case": 0,
+            "ctl_index_padding": 0,
+            "ctl_name_ext": "ctl",
+            "ctl_name_rule": "{component}_{side}{index}_{description}_{extension}",
+            "data_collector": false,
+            "data_collector_embedded": false,
+            "data_collector_embedded_custom_joint": "",
+            "data_collector_path": "",
+            "date": "2024-01-01 20:07:22.946561",
+            "doPostCustomStep": false,
+            "doPreCustomStep": false,
+            "force_SSC": false,
+            "force_uniScale": true,
+            "gear_version": "4.2.0",
+            "importSkin": false,
+            "ismodel": true,
+            "joint_description_letter_case": 0,
+            "joint_index_padding": 0,
+            "joint_name_ext": "jnt",
+            "joint_name_rule": "{component}_{side}{index}_{description}_{extension}",
+            "joint_rig": true,
+            "maya_version": "2022.0",
+            "mode": 0,
+            "postCustomStep": "",
+            "preCustomStep": "",
+            "proxyChannels": false,
+            "rig_name": "rig",
+            "side_center_name": "C",
+            "side_joint_center_name": "C",
+            "side_joint_left_name": "L",
+            "side_joint_right_name": "R",
+            "side_left_name": "L",
+            "side_right_name": "R",
+            "skin": "",
+            "step": 6,
+            "synoptic": "",
+            "user": "georg",
+            "worldCtl": false,
+            "world_ctl_name": "world_ctl"
+        },
+        "tra": [
+            [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ]
+        ]
+    },
+    "meta": null
+}
