@@ -721,13 +721,13 @@ class Rig(Main):
                 self.model, "guide_x_ray", "bool", False, keyable=True)
 
         attribute.addAttribute(
-            self.model, "guide_vis", "bool", True, keyable=True)
+            self.model, "guide_vis", "bool", False, keyable=True)
 
         attribute.addAttribute(
             self.model,
             "joint_radius",
             "double",
-            value=1.0,
+            value=0.1,
             minValue=0,
             keyable=True
         )
