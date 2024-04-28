@@ -63,7 +63,6 @@ class Guide(guide.ComponentGuide):
         moduleDir = os.path.dirname(__file__)
         io.import_guide_template(os.path.join(moduleDir, "lips.sgt"), initParent=self.root)
 
-
     def addParameters(self):
         """Add the configurations settings"""
 
@@ -71,7 +70,88 @@ class Guide(guide.ComponentGuide):
         self.pParentJointIndex = self.addParam(
             "parentJointIndex", "long", -1, None, None)
 
+        self.addParam("uprMajorC", "message", None)
+        self.addParam("lwrMajorC", "message", None)
+
+        self.addParam("uprMinorC", "message", None)
+        self.addParam("lwrMinorC", "message", None)
+
+        for side in ["L", "R"]:
+            self.addParam("uprMinor0C".format(side), "message", None)
+            self.addParam("uprMinor1C".format(side), "message", None)
+            self.addParam("uprMinor2C".format(side), "message", None)
+
+            self.addParam("lwrMinor0{}".format(side), "message", None)
+            self.addParam("lwrMinor1{}".format(side), "message", None)
+            self.addParam("lwrMinor2{}".format(side), "message", None)
+
+            self.addParam("{uprPinch{}".format(side), "message", None)
+            self.addParam("{lwrPinch{}".format(side), "message", None)
+
         return
+
+    def connection(self):
+        guides = []
+        for i in pm.ls("*_root", type="transform"):
+            if i.hasAttr("isGearGuide"):
+                guides.append(i.name())
+
+            # Major Lip
+            if 'uprMajor_C0' in i.name():
+                pm.connectAttr(
+                    "{}.message".format(i.name()),
+                    "lip_C0_root.uprMajorC"
+                )
+
+            if 'lwrMajor_C0' in i.name():
+                pm.connectAttr(
+                    "{}.message".format(i.name()),
+                    "lip_C0_root.lwrMajorC"
+                )
+
+            # Minor Center
+            if 'uprMinor_C0' in i.name():
+                pm.connectAttr(
+                    "{}.message".format(i.name()),
+                    "lip_C0_root.uprMinorC"
+                )
+
+            if 'lwrMinor_C0' in i.name():
+                pm.connectAttr(
+                    "{}.message".format(i.name()),
+                    "lip_C0_root.lwrMinorC"
+                )
+
+            # Minor Upr Left
+            if 'uprMinor_L0' in i.name():
+                pm.connectAttr(
+                    "{}.message".format(i.name()),
+                    "lip_C0_root.uprMinor0L"
+                )
+            if 'uprMinor_L1' in i.name():
+                pm.connectAttr(
+                    "{}.message".format(i.name()),
+                    "lip_C0_root.uprMinor1L"
+                )
+            if 'uprMinor_L2' in i.name():
+                pm.connectAttr(
+                    "{}.message".format(i.name()),
+                    "lip_C0_root.uprMinor2L"
+                )
+
+
+            # Pinch Left
+            if 'lwrMinor_L0' in i.name():
+                pm.connectAttr(
+                    "{}.message".format(i.name()),
+                    "lip_C0_root.lwrMinor_L0"
+                )
+            if 'lwrMinor_L1' in i.name():
+                pm.connectAttr(
+                    "{}.message".format(i.name()),
+                    "lip_C0_root.UprMinor0L"
+                )
+
 
 
 ##########################################################
