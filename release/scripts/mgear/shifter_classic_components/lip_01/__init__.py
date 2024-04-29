@@ -5,6 +5,7 @@ from mgear.core import attribute, primitive, transform
 from mgear.shifter import component
 from pymel.core import datatypes
 
+
 #############################################
 # COMPONENT
 #############################################
@@ -18,7 +19,7 @@ class Component(component.Main):
     # =====================================================
     def addObjects(self):
         """Add all the objects needed to create the component."""
-        
+
         t = transform.getTransformFromPos(self.guide.pos["root"])
         self.ctlNpo = primitive.addTransform(
             self.root, self.getName("control_npo"), t)
@@ -29,12 +30,13 @@ class Component(component.Main):
             self.ctlNpo, self.getName("mouthCenter_npo"), t)
         self.mouthCenter = primitive.addTransform(
             self.mouthCenter_npo, self.getName("mouthCenter"), t)
-        #
+
         # self.createJawCtrl()
-        # self.createNodesSDK()
-        
+        self.createLipCtrl()
+        self.createNodesSDK()
+
         # self.createJnt()
-        
+
     def createJawCtrl(self):
         pass
         # # jaw control
@@ -81,119 +83,203 @@ class Component(component.Main):
         #     w=0.5 * self.size,
         #     tp=self.jaw_ctl)
 
+    def createLipCtrl(self):
+        def createControl(name, position_key, parent, color, shape, width, rotation=None):
+            """Helper function to create a control with given specifications."""
+            t = transform.getTransformFromPos(self.guide.pos[position_key])
+            npo = primitive.addTransform(parent, self.getName(name + "_npo"), t)
+
+            if rotation is None:
+                rotation = datatypes.Vector([0, 0, 0])
+
+            ctrl = self.addCtl(
+                npo,
+                name,
+                t,
+                color,
+                shape,
+                w=width * self.size,
+                ro=rotation,
+                tp=self.parentCtlTag
+            )
+
+            return npo, ctrl
+
+        t = transform.getTransformFromPos(self.guide.pos["root"])
+
+        # Major Control
+        npo = primitive.addTransform(self.ctlNpo, self.getName("major_npo"), t)
+        self.uprMajorC0Npo, self.uprMajorC0Ctrl = createControl(
+            "uprMajorC", "uprMajorC", npo, 17, "circle", 0.1)
+        self.lwrMajorC0Npo, self.lwrMajorC0Ctrl = createControl(
+            "lwrMajorC", "lwrMajorC", npo, 17, "circle", 0.1)
+        self.cnrMajorL0Npo, self.cnrMajorL0Ctrl = createControl(
+            "cnrMajorL0", "cnrMajorL0", npo, 18, "circle", 0.1)
+        self.cnrMajorR0Npo, self.cnrMajorR0Ctrl = createControl(
+            "cnrMajorR0", "cnrMajorR0", npo, 20, "circle", 0.1)
+
+        # Minor Control
+        npo = primitive.addTransform(self.ctlNpo, self.getName("minor_npo"), t)
+        self.uprMinorC0Npo, self.uprMinorC0Ctrl = createControl(
+            "uprMinorC", "uprMinorC", npo, 17, "circle", 0.1)
+        self.lwrMinorC0Npo, self.lwrMinorC0Ctrl = createControl(
+            "lwrMinorC", "lwrMinorC", npo, 17, "circle", 0.1)
+
+        self.cnrMinorL0Npo, self.cnrMinorL0Ctrl = createControl(
+            "cnrMinorL0", "cnrMinorL0", npo, 18, "circle", 0.1)
+        self.uprMinorL0Npo, self.uprMinorL0Ctrl = createControl(
+            "uprMinorL0", "uprMinorL0", npo, 18, "circle", 0.1)
+        self.uprMinorL1Npo, self.uprMinorL1Ctrl = createControl(
+            "uprMinorL1", "uprMinorL1", npo, 18, "circle", 0.1)
+        self.uprMinorL2Npo, self.uprMinorL2Ctrl = createControl(
+            "uprMinorL2", "uprMinorL2", npo, 18, "circle", 0.1)
+        self.lwrMinorL0Npo, self.lwrMinorL0Ctrl = createControl(
+            "lwrMinorL0", "lwrMinorL0", npo, 18, "circle", 0.1)
+        self.lwrMinorL1Npo, self.lwrMinorL1Ctrl = createControl(
+            "lwrMinorL1", "lwrMinorL1", npo, 18, "circle", 0.1)
+        self.lwrMinorL2Npo, self.lwrMinorL2Ctrl = createControl(
+            "lwrMinorL2", "lwrMinorL2", npo, 18, "circle", 0.1)
+
+        self.cnrMinorR0Npo, self.cnrMinorR0Ctrl = createControl(
+            "cnrMinorR0", "cnrMinorR0", npo, 20, "circle", 0.1)
+        self.uprMinorR0Npo, self.uprMinorR0Ctrl = createControl(
+            "uprMinorR0", "uprMinorR0", npo, 20, "circle", 0.1)
+        self.uprMinorR1Npo, self.uprMinorR1Ctrl = createControl(
+            "uprMinorR1", "uprMinorR1", npo, 20, "circle", 0.1)
+        self.uprMinorR2Npo, self.uprMinorR2Ctrl = createControl(
+            "uprMinorR2", "uprMinorR2", npo, 20, "circle", 0.1)
+        self.lwrMinorR0Npo, self.lwrMinorR0Ctrl = createControl(
+            "lwrMinorR0", "lwrMinorR0", npo, 20, "circle", 0.1)
+        self.lwrMinorR1Npo, self.lwrMinorR1Ctrl = createControl(
+            "lwrMinorR1", "lwrMinorR1", npo, 20, "circle", 0.1)
+        self.lwrMinorR2Npo, self.lwrMinorR2Ctrl = createControl(
+            "lwrMinorR2", "lwrMinorR2", npo, 20, "circle", 0.1)
+
+        # Pinch Control
+        npo = primitive.addTransform(self.ctlNpo, self.getName("pinch_npo"), t)
+        self.uprPinchL0Npo, self.uprPinchL0Ctrl = createControl(
+            "uprPinchL0", "uprPinchL0", npo, 18, "circle", 0.1)
+        self.uprPinchR0Npo, self.uprPinchR0Ctrl = createControl(
+            "uprPinchR0", "uprPinchR0", npo, 20, "circle", 0.1)
+        self.lwrPinchL0Npo, self.lwrPinchL0Ctrl = createControl(
+            "lwrPinchL0", "lwrPinchL0", npo, 18, "circle", 0.1)
+        self.lwrPinchR0Npo, self.lwrPinchR0Ctrl = createControl(
+            "lwrPinchR0", "lwrPinchR0", npo, 20, "circle", 0.1)
+
     def createJnt(self):
         pass
 
     def createNodesSDK(self):
         rootPos = transform.getTransformFromPos(self.guide.pos["root"])
         self.sdkNpo = primitive.addTransform(
-                self.root, self.getName("SDK_npo"), rootPos)
-        
+            self.root, self.getName("SDK_npo"), rootPos)
+
         lipType = ["lips", "major", "minor", "corner"]
         for lip in lipType:
-            lipTransform = primitive.addTransform(self.sdkNpo, "lips_" + lip + "_SDK_npo", rootPos)
-            
+            lipTransform = primitive.addTransform(
+                self.sdkNpo, "lips_" + lip + "_SDK_npo", rootPos)
+
             # Set each lipTransform as an instance variable
-            setattr(self, lip + "Npo", lipTransform)
-            
+            setattr(self, lip + "NpoSDK", lipTransform)
+
+        print("groups", self.groups)
+        print("subgroups", self.subGroups)
+
         # major sdk
-        for uprLwr, ctl in zip(["upr", "lwr"], [self.lipup_ctl, self.liplow_ctl]):
-            name = "{}_major_SDK_buffer"
-            bufferNode = primitive.addTransform(self.majorNpo,
-                                                self.getName(name.format(uprLwr)),
-                                                rootPos)
+        for uprLwr, ctl in zip(["upr", "lwr"], [self.uprMajorC0Ctrl, self.lwrMajorC0Ctrl]):
+            name = "{}Major_C0_SDK_buffer"
+            bufferNode = primitive.addTransform(
+                self.majorNpoSDK,
+                name.format(uprLwr),
+                rootPos)
             bufferNode.template.set(1)
-            
+
             for xyz in "XYZ":
                 ctl.attr("translate{}".format(xyz)) >> bufferNode.attr("translate{}".format(xyz))
-                
-                name = "{}_major_translate{}_SDK{}"
-                t = transform.getTransformFromPos(self.guide.pos["{}Lip_major".format(uprLwr)])
-                nodeNpo = primitive.addTransform(self.majorNpo,
-                                                 self.getName(name.format(uprLwr, xyz, "_npo")),
-                                                 t)
-                primitive.addTransform(nodeNpo,
-                                       self.getName(name.format(uprLwr, xyz, "")),
-                                       t)
+
+                name = "{}Major_C0_translate{}_SDK{}"
+                t = transform.getTransformFromPos(self.guide.pos["{}MajorC".format(uprLwr)])
+                nodeNpo = primitive.addTransform(
+                    self.majorNpoSDK,
+                    name.format(uprLwr, xyz, "_npo"),
+                    t)
+                primitive.addTransform(
+                    nodeNpo,
+                    name.format(uprLwr, xyz, ""),
+                    t)
 
         # minor sdk
-        for side in ["L", "R"]:
-            for uprLwr in ["upr", "lwr"]:
-                sideGrpName = "{}{}_minor_SDK_npo"
-                sideGrp = primitive.addTransform(self.minorNpo,
-                                                 self.getName(sideGrpName.format(uprLwr, side)),
-                                                 rootPos)
-                for i in range(1, 4):
-                    ctlName = self.getName("{}_{}Lip_minor0{}_ctl".format(side, uprLwr, i))
+        for uprLwr in ["upr", "lwr"]:
+            sideGrpName = "{}Minor_SDK_npo"
+            sideGrp = primitive.addTransform(self.minorNpoSDK, sideGrpName.format(uprLwr), rootPos)
+            for side in ["L", "R"]:
+                for i in range(0, 3):
+                    ctlName = self.getName("{}Minor{}{}_ctl".format(uprLwr, side, i))
                     ctlNode = pm.PyNode(ctlName)
-                    
-                    bufferName = "{}{}_minor_0{}_SDK_buffer"
-                    bufferNode = primitive.addTransform(sideGrp,
-                                    self.getName(bufferName.format(uprLwr, side, i)),
-                                    rootPos)
+
+                    bufferName = "{}Minor_{}{}_SDK_buffer"
+                    bufferNode = primitive.addTransform(
+                        sideGrp,
+                        bufferName.format(uprLwr, side, i),
+                        rootPos)
                     bufferNode.template.set(1)
-                    
-                    pos = self.guide.pos["{}_{}Lip_minor0{}".format(side, uprLwr, i)]
+
+                    pos = self.guide.pos["{}Minor{}{}".format(uprLwr, side, i)]
                     t = transform.getTransformFromPos(pos)
                     for xyz in "XYZ":
                         ctlNode.attr("translate{}".format(xyz)) >> bufferNode.attr("translate{}".format(xyz))
-                        
-                        name = "{}{}_minor_0{}_translate{}_SDK{}"
-                        nodeNpo = primitive.addTransform(sideGrp,
-                                                         self.getName(name.format(uprLwr, side, i, xyz, "_npo")),
-                                                         t)
-                        primitive.addTransform(nodeNpo,
-                                               self.getName(name.format(uprLwr, side, i, xyz, "")),
-                                               t)
-                                
-        # corner sdk
-        for side, ctl in zip(["L", "R"], [self.cnrLipL_ctl, self.cnrLipR_ctl]):
-            bufferName = "cnr{}_major_SDK_buffer"
-            bufferNode = primitive.addTransform(self.cornerNpo,
-                            self.getName(bufferName.format(side)),
-                            rootPos)
-            bufferNode.template.set(1)
-            for xyz in "XYZ":
-                ctl.attr("translate{}".format(xyz)) >> bufferNode.attr("translate{}".format(xyz))
-                
-                name = "cnr{}_major_translate{}_SDK{}"
-                pos = self.guide.pos["{}_cnrLip".format(side)]
-                t = transform.getTransformFromPos(pos)
-                nodeNpo = primitive.addTransform(self.cornerNpo,
-                                                 self.getName(name.format(side, xyz, "_npo")),
-                                                 t)
-                primitive.addTransform(nodeNpo,
-                                       self.getName(name.format(side, xyz, "")),
-                                       t)
-        
+
+                        name = "{}Minor_{}{}_translate{}_SDK{}"
+                        nodeNpo = primitive.addTransform(
+                            sideGrp,
+                            name.format(uprLwr, side, i, xyz, "_npo"),
+                            t)
+                        primitive.addTransform(
+                            nodeNpo,
+                            name.format(uprLwr, side, i, xyz, ""),
+                            t)
+
+        # # corner sdk
+        # for side in ["L", "R"]:
+        #     bufferName = "cnr{}_major_SDK_buffer"
+        #     bufferNode = primitive.addTransform(self.cornerNpoSDK,
+        #                                         bufferName.format(side),
+        #                                         rootPos)
+        #     bufferNode.template.set(1)
+        #     for xyz in "XYZ":
+        #         # ctl.attr("translate{}".format(xyz)) >> bufferNode.attr("translate{}".format(xyz))
+        #
+        #         name = "cnr{}_major_translate{}_SDK{}"
+        #         pos = self.guide.pos["{}_cnrLip".format(side)]
+        #         t = transform.getTransformFromPos(pos)
+        #         nodeNpo = primitive.addTransform(self.cornerNpo,
+        #                                          self.getName(name.format(side, xyz, "_npo")),
+        #                                          t)
+        #         primitive.addTransform(nodeNpo,
+        #                                self.getName(name.format(side, xyz, "")),
+        #                                t)
+
         # lip sdk
-        bufferNode = primitive.addTransform(self.lipsNpo,
-                        self.getName("lip_SDK_buffer"),
-                        rootPos)
+        bufferNode = primitive.addTransform(self.lipsNpoSDK,
+                                            "lip_C0_SDK_buffer",
+                                            rootPos)
         bufferNode.template.set(1)
-        
+
         for xyz in "XYZ":
-            name = "lip_translate{}_SDK{}"
+            name = "lip_C0_translate{}_SDK{}"
             t = transform.getTransformFromPos(self.guide.pos["root"])
-            nodeNpo = primitive.addTransform(self.lipsNpo,
-                                             self.getName(name.format(xyz, "_npo")),
-                                             t)
-            primitive.addTransform(nodeNpo,
-                                   self.getName(name.format(xyz, "")),
-                                   t)
+            nodeNpo = primitive.addTransform(self.lipsNpoSDK, name.format(xyz, "_npo"), t)
+            primitive.addTransform(nodeNpo, name.format(xyz, ""), t)
+
         for xy in "XY":
             name = "lip_rotate{}_SDK{}"
             t = transform.getTransformFromPos(self.guide.pos["root"])
-            nodeNpo = primitive.addTransform(self.lipsNpo,
-                                             self.getName(name.format(xy, "_npo")),
-                                             t)
-            primitive.addTransform(nodeNpo,
-                                   self.getName(name.format(xy, "")),
-                                   t)
-            
+            nodeNpo = primitive.addTransform(self.lipsNpoSDK, name.format(xy, "_npo"), t)
+            primitive.addTransform(nodeNpo, name.format(xy, ""), t)
+
     def setOutlineColor(self, node, xyz):
         node.useOutlinerColor.set(1)
-        
+
         if "X" in xyz:
             new_color = (1.0, 0, 0)
         elif "Y" in xyz:
@@ -201,7 +287,7 @@ class Component(component.Main):
         elif "Z" in xyz:
             new_color = (0.314, 0.314, 1.0)
         node.outlinerColor.set(new_color)
-        
+
     # =====================================================
     # ATTRIBUTES
     # =====================================================
@@ -232,7 +318,8 @@ class Component(component.Main):
         we shouldn't create any new object in this method.
 
         """
-        pass
+        print("parentComponent", self.guide.parentComponent)
+
         #
         # # mouth center rotation
         # pm.connectAttr(self.jaw_ctl + ".rotateZ",
